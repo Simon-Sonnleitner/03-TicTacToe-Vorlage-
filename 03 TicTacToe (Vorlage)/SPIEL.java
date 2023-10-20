@@ -476,7 +476,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     }
     
     // public void entferneSzene(String name) {
-        // // ToDo
+        //
     // }
     
     /**

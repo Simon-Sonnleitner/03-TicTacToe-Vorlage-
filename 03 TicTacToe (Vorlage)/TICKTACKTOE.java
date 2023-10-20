@@ -1,40 +1,35 @@
-
-public class TICTACTOE extends SPIEL
+public class TICKTACKTOE extends SPIEL
 {
-    //TODO: Initialisiere ein zweidimansionale Array namens spielfeld zur Verwaltung von ganzen Zahlen.
-    int[][] spielfeld;
+    //TODO: Initialisiere ein zweidimensionales Array namens spielfeld zur Verwaltung von ganzen Zahlen.
     //Diese geben die Belegung des Spielfeldes an.
     //0 steht für ein leeres Feld, 1 steht für Spieler_X und 2 steht für Spieler_O.
+    int[][] spielfeld;
 
-    int aktueller_spieler;
-    
     //TODO: Initialisiere ein ganzzahliges Attribut aktueller_spieler. Es soll anzeigen, welcher Spieler gerade am Zug ist.
+    int aktueller_spieler;
 
-
-
-    public TICTACTOE()
+    public TICKTACKTOE()
     {
-
         //1 Bildschirmmeter entspricht 30 Pixel.
         super( 450 , 450, true );
 
         this.setzeHintergrundgrafik("spielfeld.png");
         
-        //TODO: Initialiere das Array spielfeld 3 x 3.
+        //TODO: Initialisiere das Array spielfeld 3 x 3.
         spielfeld = new int[3][3];
         
         //TODO: Initialisiere das Attribut aktueller_spieler mit dem Wert 1.
         aktueller_spieler = 1;
+
         //TODO: Initialisiere alle Elemente des Arrays spielfeld mit dem Wert 0. Alle Felder sind zu Beginn leer.
 
-        for (int i = 0; i <spielfeld.length; i++)
+        for (int i = 0; i < spielfeld.length; i++)
         {
             for (int j = 0; j < spielfeld.length; j++)
             {
                 spielfeld[i][j] = 0;
             }
         }
-
         zeigeKoordinatensystem(true);
     }
     
@@ -68,17 +63,16 @@ public class TICTACTOE extends SPIEL
      */
     public void FeldMarkieren(int x, int y, int spielerNummer)
     {
+        FIGUR Figure;
         if(spielerNummer == 1)
         {
-            FIGUR figurx = new FIGUR("x.png");
-            figurx.setzeMittelpunkt(x, y);
+            Figure = new FIGUR("x.png");
         }
         else
         {
-            FIGUR figuro = new FIGUR("o.png");
-            figuro.setzeMittelpunkt(x , y);
+            Figure = new FIGUR("o.png");
         }
-
+        Figure.setzeMittelpunkt(x, y);
 
 
     }
@@ -94,7 +88,9 @@ public class TICTACTOE extends SPIEL
     @Override
     public void klickReagieren( double x , double y )
     {
-        // erst rechts mitte, oben, unten, dann mitte mitte, oben, unten, dann links mitte, oben, unten
+        /*
+          erst rechts mitte, oben, unten, dann in der mitte die mitte, oben, unten, dann links mitte, oben, unten
+         */
         if(x >= 2.5 && y < 2.5 && y > -2.5 && spielfeld[2][1] == 0)
         {
             FeldMarkieren(5,0, this.aktueller_spieler);
@@ -133,12 +129,5 @@ public class TICTACTOE extends SPIEL
             SpielerWechseln();
             spielfeld[0][2] = this.aktueller_spieler;
         }
-
-
     }
-
-
-
-    
-
 }

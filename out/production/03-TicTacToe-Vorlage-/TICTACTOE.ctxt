@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=TICTACTOE
+comment0.target=TICKTACKTOE
 comment1.params=
-comment1.target=TICTACTOE()
+comment1.target=TICKTACKTOE()
 comment2.params=
 comment2.target=void\ SpielerWechseln()
 comment2.text=\r\n\ Methode\ SpielerWechseln\ sorgt\ daf\u00FCr,\ dass\ die\ Spieler\ sich\ abwechsel\ und\ \u00E4ndert\ das\ Attribut\ aktueller_spieler\ geeignet.\r\n\r\n
