@@ -95,7 +95,15 @@ public class TICTACTOE extends SPIEL
     @Override
     public void klickReagieren( double x , double y ) 
     {
-
+        // erst rechts mitte, oben, unten, dann mitte mitte, oben, unten, dann links mitte, oben, unten
+        if(x >= 2.5 && y < 2.5 && y > -2.5)
+        {
+            FeldMarkieren(5,0,this.aktueller_spieler);
+        } else if (x >= 2.5 && y >= 2.5) {
+            FeldMarkieren(5,5,this.aktueller_spieler);
+        } else if (x >= 2.5 && y <= -2.5) {
+            FeldMarkieren(5,-5, this.aktueller_spieler);
+        }
     }
     
 
