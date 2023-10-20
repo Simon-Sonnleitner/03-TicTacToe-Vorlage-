@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=TICTACTOE
+comment1.params=
+comment1.target=TICTACTOE()
+comment2.params=
+comment2.target=void\ SpielerWechseln()
+comment2.text=\r\n\ Methode\ SpielerWechseln\ sorgt\ daf\u00FCr,\ dass\ die\ Spieler\ sich\ abwechsel\ und\ \u00E4ndert\ das\ Attribut\ aktueller_spieler\ geeignet.\r\n\r\n
+comment3.params=x\ y\ spielerNummer
+comment3.target=void\ FeldMarkieren(int,\ int,\ int)
+comment3.text=\r\n\ Methode\ FeldMarkieren\r\n\r\n\ @param\ x\ Ein\ Parameter\ der\ die\ x-Koordinate\ der\ Spielmatrix\ beschreibt.\ 0\ ist\ links,\ 1\ ist\ mittig,\ 2\ ist\ rechts.\r\n\ @param\ y\ Ein\ Parameter\ der\ die\ y-Koordinate\ der\ Spielmatrix\ beschreibt.\ 0\ ist\ oben,\ 1\ ist\ mittig,\ 2\ ist\ unten.\r\n\ @param\ spielerNummer\ Ein\ Parameter\ der\ die\ Spielernummer\ \u00FCbergibt,\ der\ gerade\ am\ Zug\ ist\ (1\ oder\ 2).\r\n
+comment4.params=x\ y
+comment4.target=void\ klickReagieren(double,\ double)
+comment4.text=\r\n\ Methode\ klickReagieren\ wird\ stets\ ausgel\u00F6st,\ wenn\ man\ mit\ der\ Maus\ in\ das\ Fenster\ klickt.\r\n\r\n\ @param\ x\ Ein\ Parameter\ der\ die\ x-Koorinate\ der\ Mausposition\ beim\ Klicken\ in\ Bildschirmmetern\ \u00FCbergibt.\r\n\ @param\ y\ Ein\ Parameter\ der\ die\ y-Koorinate\ der\ Mausposition\ beim\ Klicken\ in\ Bildschirmmetern\ \u00FCbergibt.\r\n
+numComments=5
